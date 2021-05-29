@@ -1,0 +1,25 @@
+**************************************************BytesBrain**************************************************
+
+++++++++++++++++++++++++++++++++++++++++++++++++++DESCRIPTION:+++++++++++++++++++++++++++++++++++++++++++++++++
+BytesBrain is a project which uses (Face Recognition) to take attendance of students of a particular class
+,has a WHITE BOARD which is controlled by the Hand of the teacher having a some material(like pen cap) of the 
+color mentioned in the code, which when moved in air,moves the cursor on the white window drawing the figure.
+It as "Take quiz" option which opens a quiz taking website(https://quizizz.com/admin) to take quiz of the topic
+being taught and BytesBrain automatically takes attendance of the people recognized in the live feed and stored them
+in an excel file,which can be downloaded by clicking the "Download Attendance" button.
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++CONTENT:+++++++++++++++++++++++++++++++++++++++++++++++++
+1.images folder contains images of people whom to recognize inside the live feed;
+2.app.jpg central image of the app
+3.app.py main python file to run the BytesBrain application
+4.attendance.py and whiteboard.py are the supported file to the app.py.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++HOSTING:+++++++++++++++++++++++++++++++++++++++++++++++++
+1. PYTHON INSTALLED
+ PYTHON PACKAGES LIKE TKINTER,FACE RECOGNITION,WEBBROWSER,SHUTIL,NUMPY,CV2 INSTALLED.
+AND A PC WITH CAMERA.
+2. THEN RUN THE APP.PY PYTHON FILE
+
+**********************************************LINK************************************
+https://drive.google.com/file/d/1Uu13LYEFEUq6g1xuglFiWwmY13qUACz2/view
