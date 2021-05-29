@@ -7,4 +7,4 @@ class Person(models.Model):
 	name = models.CharField(max_length=50)
 	phone = models.IntegerField()
 	email = models.EmailField()
-	pincode = models.IntegerField(max_length = 5)
+	pincode = models.IntegerField()

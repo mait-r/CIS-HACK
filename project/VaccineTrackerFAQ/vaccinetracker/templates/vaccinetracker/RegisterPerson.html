@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>BrainStorm Healthtech Project</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- LINEARICONS -->
+		<link rel="stylesheet" href="/cdn/fonts/linearicons/style.css">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="/cdn/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+		
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="/cdn/css/style.css">
+		<style>
+			* {box-sizing: border-box;}
+			
+			body { 
+			  margin: 0;
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+			
+			.header {
+			  overflow:auto;
+			  padding: 20px 40px;
+			  background-color: rgb(80, 92, 255) ;
+			}
+			
+			.header a {
+			  float: left;
+			  color: black;
+			  text-align: center;
+			  padding: 12px;
+			  text-decoration: none;
+			  font-size: 18px; 
+			  line-height: 25px;
+			  border-radius: 4px;
+			}
+			
+			.header a.logo {
+			  font-size: 25px;
+			  font-weight: bold;
+			  color: white;
+			}
+			
+			.header a:hover {
+			  background-color: #ddd;
+			  color: black;
+			}
+			
+			.header a.active {
+			  background-color: dodgerblue;
+			  color: white;
+			}
+			
+			.header-right {
+			  float: right;
+			}
+			
+			@media screen and (max-width: 500px) {
+			  .header a {
+				float: none;
+				display: block;
+				text-align: left;
+			  }
+			  
+			  .header-right {
+				float: none;
+			  }
+			}
+			</style>
+	</head>
+
+	<body>
+		<div class="header">
+			<a href="#default" class="logo">Brainstorm</a>
+			<div class="header-right">
+			  <a class="active" href="#index">Home</a>
+			  <a href="MediacalAssistant.html">Medical Assistant</a>
+			  <a href="#team">Team</a>
+			</div>
+		  </div>
+		<div class="wrapper">
+			<div class="inner">
+				<form method="POST">
+					{% csrf_token %}
+					<h3>Enter your information</h3>
+					<div class="form-row">
+						<div class="form-wrapper">
+							<label for="">Name *</label>
+							{{form.name}}
+						</div>
+						<div class="form-wrapper">
+							<label for="">Phone *</label>
+							{{form.phone}}
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-wrapper">
+							<label for="">Pincode *</label>
+							{{form.pincode}}
+						</div>
+						<div class="form-wrapper">
+							<label for="">E-mail</label>
+							{{form.email}}
+						</div>
+					</div>
+					
+					<button data-text="Let me Notify" type="submit">
+						<span>Let me Notify</span>
+					</button>
+				</form>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>
