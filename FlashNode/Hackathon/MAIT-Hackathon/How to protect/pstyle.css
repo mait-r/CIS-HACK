@@ -1,0 +1,36 @@
+header {
+    background-color: black;
+    padding: 15px;
+    color: white;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    margin: 90px 100px;
+}
+
+nav a {
+    margin: 10px 30px 10px 0px;
+    text-decoration: none;
+    color: gray;
+}
+
+nav a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+section {
+    margin: 50px 150px;
+}
+
+main {
+    margin: 50px 150px;
+}
+
+#product {
+    margin: 10px 460px;
+}
