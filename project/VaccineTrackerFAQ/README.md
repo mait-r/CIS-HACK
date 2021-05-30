@@ -32,8 +32,18 @@ We will use virtual environment so that installing packages is simple for the us
 
 
 
+### Step 5
+#### Running the Server
 
-### People with only hardware solution are required to submit only the 'pptx' and 'text' files. A link to the video demonstration of your working model should also be included in both the files.
+`python manage.py runserver`
 
-\
-You can complete your work on the local machine and then upload your project folder in the forked repository and proceed to create a Pull Request (PR).
+This will create a test server on the http://127.0.0.1:8000 URL.
+
+
+The Project is made on Django framework with the base python, that means is fully supports Python code in the backend, so it will be easy to expand this project further in the future, for example if we have to add SMS sending compatibility, we can just do it from the automated Python scripts.
+The user data is stored in an SQLite db, but fully supports other types of Database servers as well, the settings need to be changed in the Django's settings.py file.
+
+
+Additionally, this project fetches the live Vaccination slots data from the COWIN API Setu's Web API in the form of JSON and parses them to the user.
+
+For the FAQ section, the user can see the existing questions, and if they don't see their relevant question, they can simply click the button of add a question and a form will appear. This part is done using Jquery Show() and Hide() functions, making the transition experience for user, seamless.
