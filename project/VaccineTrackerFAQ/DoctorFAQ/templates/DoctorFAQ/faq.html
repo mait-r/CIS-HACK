@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Medical FAQ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="/cdn/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/cdn/font-awesome/css/font-awesome.min.css" />
+
+    <script type="text/javascript" src="/cdn/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="/cdn/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/cdn/css/style.css">
+		<style>
+			* {box-sizing: border-box;}
+			
+			body { 
+			  margin: 0;
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+			
+			.header {
+			  overflow:auto;
+			  padding: 20px 40px;
+			  background-color: rgb(80, 92, 255) ;
+			}
+			
+			.header a {
+			  float: left;
+			  color: black;
+			  text-align: center;
+			  padding: 12px;
+			  text-decoration: none;
+			  font-size: 18px; 
+			  line-height: 25px;
+			  border-radius: 4px;
+			}
+			
+			.header a.logo {
+			  font-size: 25px;
+			  font-weight: bold;
+			  color: white;
+			}
+			
+			.header a:hover {
+			  background-color: #ddd;
+			  color: black;
+			}
+			
+			.header a.active {
+			  background-color: dodgerblue;
+			  color: white;
+			}
+			
+			.header-right {
+			  float: right;
+			}
+			
+			@media screen and (max-width: 500px) {
+			  .header a {
+				float: none;
+				display: block;
+				text-align: left;
+			  }
+			  
+			  .header-right {
+				float: none;
+			  }
+			}
+			</style>
+</head>
+<body>
+    <div class="header">
+        <a href="#default" class="logo">Brainstorm</a>
+        <div class="header-right">
+          <a href="/">Home</a>
+          <a class="active" href="/faq/">Medical FAQ</a>
+          <a href="#team">Team</a>
+        </div>
+      </div>
+
+<div class="container">
+
+<!-- Bootstrap FAQ - START -->
+
+    <div class="panel-group" id="accordion">
+        <div class="faqHeader">COVID-19 Vaccine FAQs</div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">What about the possible side-effects from COVID-19 vaccine?</a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    COVID-19 vaccine will be introduced only when the safety is proven. As is true for other vaccines, the common side effects in some individuals could be mild fever, pain, etc. at the site of injection. States have been asked to start making arrangements to deal with any COVID-19 vaccine-related side-effects as one of the measures towards safe vaccine delivery among masses. 
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">What are expected immediate and delayed side effects of this vaccine?</a>
+                </h4>
+            </div>
+            <div id="collapseTen" class="panel-collapse collapse">
+                <div class="panel-body">
+                    Covishield®: Some mild symptoms may occur like injection site tenderness, injection site pain, headache, fatigue, myalgia, malaise, pyrexia, chills and arthralgia, nausea. Very rare events of demyelinating disorders have been reported following vaccination with this vaccine but without the causal relationship establishment.
+
+					Covaxin®: Some mild symptoms AEFIs may occur like injection site pain, headache, fatigue, fever, body ache, abdominal pain, nausea and vomiting, dizziness-giddiness, tremor, sweating, cold, cough and injection site swelling. No other vaccine-related serious adverse effects have been reported. 
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">Which drug should be taken to minimize the adverse effects of this vaccine?</a>
+                </h4>
+            </div>
+            <div id="collapseEleven" class="panel-collapse collapse">
+                <div class="panel-body">
+                    In case of minor adverse effects such as injection site pain, tenderness, malaise, pyrexia, etc., paracetamol may be used to alleviate the symptoms.
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="button" id="ask" class="btn btn-primary" onclick="$('#question').show(600); $('#ask').hide(600); ">Ask a Question</button>
+    <form method="POST">
+    	<div id="question">
+    		{% csrf_token %}
+    		<input type="textarea" name="question" class="form-control">
+    		<button type="submit" class="btn btn-success">Submit Question</button>
+    	</div>
+    </form>
+</div>
+
+<div style="background: #0000FF; color: #FFF; position: absolute; bottom: 0px; left: 0px; width: 100%;">
+			<div style="padding: 12px 30px; text-align: center;">These are sample questions added for the project prototype and not to be confused with actual medical advice. </div>
+		</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+   $('#question').hide();
+});
+</script>
+
+
+<style>
+    .faqHeader {
+        font-size: 27px;
+        margin: 20px;
+    }
+
+    .panel-heading [data-toggle="collapse"]:after {
+        font-family: 'Glyphicons Halflings';
+        content: "\e072"; /* "play" icon */
+        float: right;
+        color: #F58723;
+        font-size: 18px;
+        line-height: 22px;
+        /* rotate "play" icon from > (right arrow) to down arrow */
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+
+    .panel-heading [data-toggle="collapse"].collapsed:after {
+        /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        color: #454444;
+    }
+</style>
+
+<!-- Bootstrap FAQ - END -->
+
+</div>
+
+
+</body>
+</html>

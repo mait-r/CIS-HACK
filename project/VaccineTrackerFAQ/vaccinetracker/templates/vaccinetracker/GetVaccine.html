@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+<br>
+<center><h3>Succesfully Registered for Notifications!</h3></center>
+<center><h4>Available Vaccine slots in your pincode</h4></center>
+<br>
+<table class="table table-bordered table-striped table-hover">
+	<tr class="table-info">
+		<th>Date</th>
+		<th>Age</th>
+		<th>Vaccine</th>
+		<th>Center Name</th>
+		<th>Center Address</th>
+		<th>District Name</th>
+		<th>Slots</th>
+		<th>Fees</th>
+
+	</tr>
+	{% for s in sessions %}
+	<tr>
+		<td>{{s.date}}</td>
+		<td>{{s.min_age_limit}}+</td>
+		<td>{{s.vaccine}}</td>
+		<td>{{s.name}}</td>
+		<td>{{s.address}}</td>
+		<td>{{s.district_name}}</td>
+		<td><strong>{{s.available_capacity}}</strong></td>
+		<td>{{s.fee_type}}</td>
+	</tr>
+	{% endfor %}
+</table>
+
+</body>
+</html>
