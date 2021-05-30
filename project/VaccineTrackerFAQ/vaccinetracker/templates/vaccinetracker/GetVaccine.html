@@ -13,10 +13,10 @@
 	<tr class="table-info">
 		<th>Date</th>
 		<th>Age</th>
+		<th>Vaccine</th>
 		<th>Center Name</th>
 		<th>Center Address</th>
 		<th>District Name</th>
-		<th>Pin Code</th>
 		<th>Slots</th>
 		<th>Fees</th>
 
@@ -24,11 +24,11 @@
 	{% for s in sessions %}
 	<tr>
 		<td>{{s.date}}</td>
-		<td>{{s.min_age_limit}} +</td>
+		<td>{{s.min_age_limit}}+</td>
+		<td>{{s.vaccine}}</td>
 		<td>{{s.name}}</td>
 		<td>{{s.address}}</td>
 		<td>{{s.district_name}}</td>
-		<td>{{s.pincode}}</td>
 		<td><strong>{{s.available_capacity}}</strong></td>
 		<td>{{s.fee_type}}</td>
 	</tr>

@@ -26,6 +26,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', vaccine.RegisterPerson),
     path('getvaccine/<pincode>', vaccine.GetVaccine),
+    path('fetchvaccine/<pincode>', vaccine.FetchVaccine),
 
     #DoctorFAQ App
     path('faq/', faq.FAQIndex),
