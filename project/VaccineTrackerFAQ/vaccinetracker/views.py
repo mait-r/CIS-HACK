@@ -41,3 +41,6 @@ def GetVaccine(request,pincode):
 	response = requests.get(url, headers = header)
 	data = response.json()
 	return render(request,'vaccinetracker/GetVaccine.html', data)
+
+def Team(request):
+	return render(request,'vaccinetracker/Team.html', None)

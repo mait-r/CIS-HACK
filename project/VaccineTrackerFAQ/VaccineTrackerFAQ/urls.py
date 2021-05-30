@@ -27,6 +27,7 @@ urlpatterns = [
     path('', vaccine.RegisterPerson),
     path('getvaccine/<pincode>', vaccine.GetVaccine),
     path('fetchvaccine/<pincode>', vaccine.FetchVaccine),
+    path('team/', vaccine.Team),
 
     #DoctorFAQ App
     path('faq/', faq.FAQIndex),
