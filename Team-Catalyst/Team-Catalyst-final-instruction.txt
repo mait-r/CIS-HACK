@@ -1,0 +1,82 @@
+# team-Catalyst
+# Education
+
+
+## About our project
+
+Volunteerly is a web application project built on MERN stack providing an easy access to all the users where they can create  an account for themselves and connect to all the NGO's that required any volunteering 
+How It Works 
+NGO registers itself as organization and opens up the position which is now visible on user dashboard 
+User can apply to volunteer for the position by simply clicking on apply
+After that NGO can review submitted application and choose candidates.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Our project is deployed on heroku access it using this url:-
+## https://volunteerlyproj.herokuapp.com/
+
+# some credentials for you or you can create a new account
+## login as ngo
+-> email - smile@gmail.com
+-> pass - 123456
+
+## login as user
+-> email - harsh@gmail.com
+-> pass - 123456
+
+
+# Want a tutorial? check this video uploaded on youtube about the working of Volunteerly
+##  https://youtu.be/PjQ1TjK07oc
+
+
+# Here is the github repo link if you want to see source code
+## https://github.com/harshv9988/hack-mait
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# if you wish to run the source code you firstly have to install dependancies
+## first in the root directory do this
+-> npm install
+## secondly go to client folder and installreact dependancies by running
+-> npm install
+
+
+
+# Now you are good to go
+
+## Steps to start the project
+
+-> To Start Backend Server: 
+	npm start
+
+-> To Start Frontend Server: 
+     	cd client/
+	npm Start
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# Understanding Directory Structure (MERN STACK)
+
+## Client folder contains react structure for frontend 
+public -
+	index.html - html file
+ 
+src -
+	-> component - complete react UI code is present 	
+	-> context - React hook for accessing hooks globally avioiding prop drilling
+	-> helpers - conatins routes information
+	-> App.js - Main React component
+	-> index.js - main file
+
+Backend folder contains code for express server, handling mongo database and node
+	-> config - main configuration code for mongoose and database setup
+	-> controller - endPoint code for all API's and handling all backend functions
+	-> models - schema for User Job Ngo
+	-> routes - defining endpoints for API calls
+	-> utils - other utility code for middlewares
+	-> app.js - handling declarations for express server
+	-> index.js - declaration port for backend server
+
+
