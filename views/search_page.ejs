@@ -1,0 +1,53 @@
+<%- include('partials/header') %>
+<div class="hospital-list">
+  <table class="table table-striped">
+    <thead>
+      <th>name</th>
+      <th>rating</th>
+      <th>state</th>
+      <th>Address</th>
+      <th>Contact</th>
+      <th>General_Physicians</th>
+      <th>Pediatricians</th>
+      <th>General_Surgeon</th>
+      <th>Dentist</th>
+      <th>Dermatologists</th>
+      <th>Gynecologist</th>
+      <th>ENT_Specialist</th>
+      <th>Infrastructure_rating</th>
+      <th>Staff_rating</th>
+    </thead>
+    <tbody>
+  <%       for(var i=0;i<detailsofthehospital.length;i++){  %>
+             <tr>
+            <td><%=detailsofthehospital[i].name %></td>
+            <td><%=detailsofthehospital[i].rating %></td>
+            <td><%=detailsofthehospital[i].state%></td>
+            <td><%=detailsofthehospital[i].Address %></td>
+            <td><%=detailsofthehospital[i].Contact %></td>
+            <td><%=detailsofthehospital[i].General_Physicians %></td>
+            <td><%=detailsofthehospital[i].Pediatricians %></td>
+            <td><%=detailsofthehospital[i].General_Surgeon %></td>
+            <td><%=detailsofthehospital[i].Dentist %></td>
+            <td><%=detailsofthehospital[i].Dermatologists %></td>
+            <td><%=detailsofthehospital[i].Gynecologist %></td>
+            <td><%=detailsofthehospital[i].ENT_Specialist %></td>
+            <td><%=detailsofthehospital[i].Infrastructure_rating %></td>
+            <td><%=detailsofthehospital[i].Staff_rating %></td>
+
+           </tr>
+    <%     }       %>
+
+
+
+
+
+
+
+
+  </table>
+</div>
+
+
+
+<%- include('partials/footer') %>
