@@ -1,7 +1,8 @@
 ![](https://www.paho.org/sites/default/files/styles/flexslider_full/public/2021-01/covid-19-vaccination-1500-991-2.jpg?h=33d2e14c&itok=Oyhv-gky)
 
-## Code Innovation Hackathon - MAIT
-This is the official Idea/project submission repository for CODE INNOVATION SERIES HACKATHON - MAIT.
+## HealthTech Project - COVID-19 Vaccine Tracker and Medical FAQ
+
+Based on the daily struggles of constantly looking for COVID Vaccine Appointments and wasting a sustantial amount of time, this project aims to cut that time and do that job automatically. The user will just have to enter their information and the system will display the available slots as of right now to the user and will also notify in future when more slots become available gradually.
 
 ## Submission Procedure
 Read the following steps and guidelines properly for proper submission of your project. Missing out any step or performing it wrongly can lead to unsuccessful submission. 
