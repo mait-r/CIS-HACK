@@ -1,6 +1,6 @@
 <p align="center">
   <a href="">
-    <img src="/img/Logo2.png" alt="FlashNode logo" width="200" height="165">
+    <img src="/FlashNode/img/Logo2.png" alt="FlashNode logo" width="200" height="165">
   </a>
 </p>
 
@@ -11,7 +11,7 @@
   <br>
 
 -------
-<img src="/img/logo.jfif" align="left" hspace="1" vspace="1" height="150" width="150">
+<img src="/FlashNode/img/logo.jfif" align="left" hspace="1" vspace="1" height="150" width="150">
 
 ## Covid Alert
 
@@ -95,19 +95,19 @@ This application can be readily developed on the Rasberrypie system, and the sys
 <table>
 <tr>
 <td>
-  <img src="/img/Js.png" alt="JavaScript logo" width="110" height="110">
+  <img src="/FlashNode/img/Js.png" alt="JavaScript logo" width="110" height="110">
 </td>
  
 <td>
-  <img src="/img/py.png" alt="Python logo" width="110" height="110">
+  <img src="/FlashNode/img/py.png" alt="Python logo" width="110" height="110">
 </td>
 
 <td>
-  <img src="/img/html5.png" alt="HTML5 logo" width="110" height="110">
+  <img src="/FlashNode/img/html5.png" alt="HTML5 logo" width="110" height="110">
 </td>
 
 <td>
-  <img src="/img/css3.jpg" alt="CSS3 logo" width="110" height="110">
+  <img src="/FlashNode/img/css3.jpg" alt="CSS3 logo" width="110" height="110">
 </td>
 </tr>
 </table>
@@ -117,48 +117,48 @@ This application can be readily developed on the Rasberrypie system, and the sys
 
 ## Accuracy of the Face-Mask Detection
 
-<img src="/img/plot.png" align="center" hspace="1" vspace="1" height="300" width="300">
+<img src="/FlashNode/img/plot.png" align="center" hspace="1" vspace="1" height="300" width="300">
 
 --------
   
 ## Preview of Covid-Alert Web Page
 
 Home Page
-![Home_Page](/img/Homepage.jpeg)
+![Home_Page](/FlashNode/img/Homepage.jpeg)
 --------
 Login Page
-![Login_Page](/img/Login.jpeg)
+![Login_Page](/FlashNode/img/Login.jpeg)
 --------
 About-Covid
-![About_Covid](/img/About-Covid.jpeg)
+![About_Covid](/FlashNode/img/About-Covid.jpeg)
 --------
 Advice
-![Advice_Page](/img/Precaution.jpeg)
+![Advice_Page](/FlashNode/img/Precaution.jpeg)
 --------
 Product
-![Product](/img/Products.jpeg)
+![Product](/FlashNode/img/Products.jpeg)
 ---------
 
 ---------
 ## Preview of Covid-Dashboard
 
-![Covid_Dashboard](/img/Covid-Dashboard.PNG)
+![Covid_Dashboard](/FlashNode/img/Covid-Dashboard.PNG)
 -------
 
 -------
 ## Preview of Covid-Alert Application
 
-![Face Detection without Mask](/img/FaceDetection_NoMask.png)
+![Face Detection without Mask](/FlashNode/img/FaceDetection_NoMask.png)
 --------
-![Face Detection with Mask](/img/FaceDetection_Mask.png)
+![Face Detection with Mask](/FlashNode/img/FaceDetection_Mask.png)
 --------
-![Working Prototype](/img/Covid-Alert-Application-Prototyp.gif)
+![Working Prototype](/FlashNode/img/Covid-Alert-Application-Prototyp.gif)
 --------
 
 --------
 ## Preview of Social Distancing Detector
 
-![Working Prototype2](/img/Social-Distancing-Preview.gif)
+![Working Prototype2](/FlashNode/img/Social-Distancing-Preview.gif)
 -------
 
 -------
@@ -169,7 +169,7 @@ Product
 
 --------
 # Working Prototype
-![Working Prototypes](/img/FlashNodeCovidAlert.gif)
+![Working Prototypes](/FlashNode/img/FlashNodeCovidAlert.gif)
 ---------
 
 ---------
