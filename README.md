@@ -4,6 +4,14 @@
   </p>
 </p>
 
+
+
+PROJECT SUBMISSION LINK :  https://drive.google.com/folderview?id=1IwGfzfTffV2PnGk0aP1tMrBxvh60tVaM
+
+
+
+
+
 ## About The Project
 The event of the creation of the vaccine gave hope to everyone across the world. But now in a country with 1.2 Billion people, vaccinating the population becomes a gargantuan task to handle this we have created a complete solution right from people looking for the nearest vaccine centers to handling the crowd at the vaccination centers.
 
