@@ -31,8 +31,9 @@ Butterfly is going to solve the issue of mental health and well being in a creat
 - A Post-Coronavirus general FAQ will be also included so that the users could get themselves in a better place.
 
 
-Instructions:
+## Instructions
 Clone the repo run "flutter pub get" run "flutter run"
+
 ## Project Link
 [https://github.com/thisisamank/butterfly](https://github.com/thisisamank/butterfly)
 
