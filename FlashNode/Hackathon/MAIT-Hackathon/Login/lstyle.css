@@ -1,0 +1,35 @@
+header {
+    background-color: black;
+    padding: 15px;
+    color: white;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.pos {
+    margin: 290px 0px 0px 200px;
+}
+
+.img_size {
+    width: 100px;
+    margin-left: 230px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.login {
+    margin-top: 75px;
+    margin-left: 100px;
+    margin-right: 90px;
+}
+
+.border {
+    border: 2px solid black;
+    margin-top: 130px;
+    margin-right: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 5px;
+}
